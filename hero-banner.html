@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banners</title>
+        <!-- Bootstrap CSS (feel free to delete if we have this in global) -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Adobe AZO Font CDN (feel free to delete if we have this in global) -->
+        <link rel="stylesheet" href="https://use.typekit.net/nmh6hoc.css">
+        <!-- Font Awesome (feel free to delete if we have this in global)-->
+        <script src="https://kit.fontawesome.com/824da20b23.js" crossorigin="anonymous"></script>
+
+    <style>
+        .hero-section {
+            background-image: url(img/home-hero.jpg);
+            background-size: cover;
+            background-position: center;
+            margin-top: -130px;
+            padding-top: 130px;
+            background-position: 50% 0%;
+        }
+
+        .hero-image {
+            max-width: 80%;
+            height: auto;
+        }
+
+        .banner-title {
+            font-family: "azo-sans-web", sans-serif;
+            font-weight: 900;
+            font-size: 3.5rem;
+            line-height: 4.375rem;
+            margin-bottom: 30px;
+        }
+
+        @media all and (max-width: 992px) {
+            .banner-title {
+                font-size: 3rem;
+                line-height: 3.75rem;
+            }
+        }
+
+        /* This is all just the button component */
+        .btn-general, .btn-video, .btn-subscribe, .btn-cta {
+            background-color: #2E6BF0;
+            color: white;
+            border-radius: 20px;
+            font-family: "azo-sans-web", sans-serif;
+            font-weight: 600;
+            font-size: 1.125rem;
+            box-shadow: inset 0px 3px 6px #00000029;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-general:hover, .btn-video:hover, .btn-subscribe:hover {
+            background-color: #5F8DF0;
+            color: white;
+        }
+
+        .btn-general:active, .btn-video:active, .btn-subscribe:active {
+            background: #2E6BF0 !important;
+            color: white !important;
+            border: 1px solid transparent !important;
+        }
+        /* End Button component */
+
+        /* General styles and navbar styles. Not necessary for the banner component */
+        body {
+            font-family: "azo-sans-web", sans-serif;
+        }
+
+        .velera-logo {
+            height: 40px;
+        }
+
+        .navbar {
+            background: transparent;
+            height: 130px;
+            border-bottom: 1px solid #64CBE8;
+        }
+
+        .navbar li a {
+            font-size: 1.25rem;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+<!-- Navbar Start (we can ignore this for the banner component) -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="img/velera-white-logo.svg" alt="Velera Logo" class="velera-logo d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white active" aria-current="page" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#"><i class="fas fa-search"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+<!-- Home Hero Section Start -->
+<section class="hero-section d-flex align-items-center">
+    <div class="container pt-0 py-lg-5">
+        <div class="row align-items-center py-5">
+            <!-- Left Column: Text -->
+            <div class="col-lg-6 mb-5 mb-lg-0 px-4 px-lg-0">
+                <div class="text-white">
+                    <h1 class="banner-title">Ut wisi enim ad minim veniam quis nostrud exerci tation ullamcor</h1>
+                    <a href="https://www.velera.com" class="btn btn-general">
+                        Button <i class="fas fa-angles-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column: Image -->
+            <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                <img src="img/hero-placeholder.png" alt="Hero Image" class="img-fluid hero-image">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Home Hero Section End -->
+
+<!-- Bootstrap JS and Popper.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
